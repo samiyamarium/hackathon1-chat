@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import asyncio
-from rag_engine import RAGEngine
 from contextlib import asynccontextmanager
+from rag_engine import RAGEngine
 
 engine: RAGEngine | None = None
 
@@ -10,7 +10,6 @@ engine: RAGEngine | None = None
 async def lifespan(app: FastAPI):
     global engine
     loop = asyncio.get_running_loop()
-    # Initialize RAGEngine in thread to avoid blocking
     engine = await loop.run_in_executor(None, RAGEngine)
     yield
 
@@ -22,9 +21,6 @@ class Query(BaseModel):
 
 @app.post("/chat")
 async def chat(q: Query):
-    if not engine:
-        return {"error": "Chatbot not initialized"}
-
     loop = asyncio.get_running_loop()
     answer = await loop.run_in_executor(None, engine.answer, q.question, q.selected_text)
     return {"answer": answer}
