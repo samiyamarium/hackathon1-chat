@@ -1,0 +1,94 @@
+.tocSection {
+  padding: 4rem 0;
+  background-color: #f4fff7;
+}
+
+.tocTitle {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #1e8f4d;
+  margin-bottom: 3rem;
+}
+
+.tocGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tocCard {
+  display: block;
+  padding: 1.8rem;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #ccebd6;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 16px rgba(0, 128, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tocCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 128, 0, 0.15);
+}
+
+.chapterId {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4caf50;
+}
+
+.tocCard h3 {
+  font-size: 1.1rem;
+  color: #1e8f4d;
+  line-height: 1.4;
+}
+.tocSection {
+  padding: 4rem 0;
+  background-color: #f4fff7;
+}
+
+.tocTitle {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #1e8f4d;
+  margin-bottom: 3rem;
+}
+
+.tocGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tocCard {
+  display: block;
+  padding: 1.8rem;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #ccebd6;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 16px rgba(0, 128, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tocCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 128, 0, 0.15);
+}
+
+.chapterId {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4caf50;
+}
+
+.tocCard h3 {
+  font-size: 1.1rem;
+  color: #1e8f4d;
+  line-height: 1.4;
+}
